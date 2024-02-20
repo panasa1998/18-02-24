@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            font-size: 20px;
+            padding: 20px;
+            background-image: linear-gradient(to bottom right,red,yellow,green,skyblue);
+            height: 550px;
+            width: 80%;
+            margin-left: 100px;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px 5px black;
+        }
+        .trans{
+            background-color: aquamarine;
+            border: 1px solid gray;
+            width: 300px; 
+            color: blue;
+            text-shadow: 1px 1px 2px red;
+        }
+        img{
+            position: relative;
+            left: 550px;
+            bottom: 550px;
+            height: 300px;
+            
+        }
+        
+        .trans1:active~img{
+            transform: rotate(30deg);
+            
+        }
+        .trans2:active~img{
+            transform: rotate(10deg);
+            border-radius: 50%;
+        }
+        .trans3:active~img{
+            transform: rotateX(45deg);
+        }
+        .trans4:active~img{
+            transform: rotateY(100deg);
+        }
+        .trans5:active~img{
+            box-shadow: 10px 10px 15px 10px red;
+        }
+        .trans6:active~img{
+            transform: rotate(90deg);
+            border-radius: 20px;
+            box-shadow: 10px 10px 5px 5px blueviolet;
+        }
+        .trans7:active~img{
+            transform: skew(20deg,20deg);
+        }
+        .trans8:active~img{
+            transform: skew(30deg,30deg);
+            box-shadow: 10px 10px 10px 10px lightcoral;
+        }
+        .trans9:active~img{
+            transform: skewX(45deg);
+            box-shadow: 10px 10px 10px 10px crimson;
+        }
+        .trans10:active~img{
+            transform: skewY(45deg);
+            box-shadow: 10px 10px 10px 10px gray;
+        }
+        .trans11:active~img{
+            transform: translate(20px,30px);
+            box-shadow: 10px 10px 10px 10px gray;
+        }
+        .trans12:active~img{
+            transform: scale(2,3);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="trans trans1"><input type="radio" name="active"/>transform:rotate(30deg) </div><br>
+    <div class="trans trans2"><input type="radio" name="active"/>transform:rotate(10deg)</div><br>
+    <div class="trans trans3"><input type="radio" name="active"/>transform:rotateX(45deg)</div><br>
+    <div class="trans trans4"><input type="radio" name="active"/>transform:rotateY(100deg)</div><br>
+    <div class="trans trans5"><input type="radio" name="active"/>transform:none</div><br>
+    <div class="trans trans6"><input type="radio" name="active"/>transform:rotateY(90deg)</div><br>
+    <div class="trans trans7"><input type="radio" name="active"/>transform:skew(20deg,20deg)</div><br>
+    <div class="trans trans8"><input type="radio" name="active"/>transform:skew(30deg,30deg)</div><br>
+    <div class="trans trans9"><input type="radio" name="active"/>transform:skewX(45deg)</div><br>
+    <div class="trans trans10"><input type="radio" name="active"/>transform:skewY(45deg)</div><br>
+    <div class="trans trans11"><input type="radio" name="active"/>transform:translate(20px,30px)</div><br>
+    <div class="trans trans12"><input type="radio" name="active"/>transform:scale(2,3)</div>
+    <img src="nature1.jpg">
+    </div>
+
+    
+</body>
+</html>
